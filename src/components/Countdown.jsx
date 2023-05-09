@@ -22,7 +22,7 @@ const Countdown = () => {
       return () => clearInterval(intervalId);
     }
     
-  }, [timeLeft, isTicking])
+  }, [timeLeft, isTicking, dispatch])
   
   return (
     <div className="countdown">
