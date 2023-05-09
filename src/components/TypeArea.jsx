@@ -4,6 +4,8 @@ import { startCounting, updateInput, compare } from '../redux/wordsSlice'
 
 const TypeArea = () => {
   const isTicking = useSelector(state => state.wordsSlice.isTicking)
+  const showResults = useSelector(state => state.wordsSlice.showResults)
+  
   const dispatch = useDispatch()
 
   const handleChange = e => {
@@ -28,7 +30,7 @@ const TypeArea = () => {
   }
   return (
     <div className='type-area'>
-        <input type="text" onChange={e => handleChange(e)}/>
+        <input type="text" onChange={e => handleChange(e)} disabled={showResults} />
     </div>
   )
 }

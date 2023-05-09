@@ -44,6 +44,7 @@ export const wordsSlice = createSlice({
       state.timer--;
       if (state.timer === 0) {
         state.showResults = true
+        state.isTicking = false;
       }
     },
     resetApp: (state, action) => {
