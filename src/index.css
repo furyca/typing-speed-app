@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  line-height: 1.5;
+  background-color: papayawhip;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,152 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+header {
+  position: sticky;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  background-color: cadetblue;
+}
+
+header h2 {
+  margin-top: 10px;
+}
+
+.words-area {
+  background-color: azure;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  overflow: hidden;
+  word-spacing: 5px;
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.countdown {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.type-area {
+  margin-top: 50px;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.type-area input {
+  background-color: azure;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.green {
+  background-color: rgb(3, 182, 3);
+}
+
+.idle {
+  background-color: rgba(128, 128, 128, 0.422);
+}
+
+.red {
+  background-color: rgb(255, 46, 46);
+}
+
+.word {
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.results {
+  background-color:paleturquoise;
+  color: darkslategray;
+  margin: 20px 0;
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  border: 5px solid navy;
+  border-radius: 6px;
+}
+
+.result-header {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 5px solid navy;
+  margin-bottom: 20px;
+}
+
+.stats {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.res-button {
+  border: none;
+  border-radius: 10px;
+  background-color:dodgerblue;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.countdown-time {
+  font-size: 22px;
+  margin-right: 20px;
+  margin-top: 5px;
 }
